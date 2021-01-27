@@ -1,0 +1,26 @@
+.landingImage{
+  width:75%;
+  height:auto;
+  object-fit:cover;
+  border-radius: 1rem;
+}
+
+.landingBanner {
+  height: 85vh;
+  max-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url('https://res.cloudinary.com/cwhight/image/upload/v1611656296/demo/roman-kraft-0EVKn3-5JSU-unsplash_wm9uvq.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-size: 3rem;
+    color: #454545 !important;
+  }
+
+  p {
+    font-size: larger;
+  }
+}

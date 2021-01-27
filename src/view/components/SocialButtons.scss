@@ -1,0 +1,96 @@
+.social-card
+{
+  height:8em;
+  width:14em;
+  margin-bottom: 2rem;
+  display:-webkit-box;
+  display:-ms-d-flexbox;
+  display:d-flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-d-flex-direction:column;
+  d-flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:0.5rem;
+  overflow:hidden;
+  //-webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  //box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.social-image
+{
+  height:8em;
+  width:14em;
+  padding-top: 1em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-color: #6eadd4;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+/* Bottom Card Section */
+
+.social-description
+{
+  display: d-flex;
+  d-flex-direction: column;
+  justify-content: space-between;
+  background-color: #FAFAFC;
+  height:0em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 1em 1em;
+  text-align:center;
+}
+
+/* Social Icons */
+
+.social-social-icons
+{
+  width:1em;
+  height:1em;
+  background-color:black;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Property Cards Hover States */
+
+.social-card:hover .social-description
+{
+  height:8em;
+  padding:1em 1em;
+}
+.social-card:hover .social-image
+{
+  height:0em;
+}
+
+.social-card:hover .social-social-icons
+{
+  background-color:white;
+}
+
+.social-card:hover .social-social-icons:hover
+{
+  background-color:blue;
+  cursor:pointer;
+}

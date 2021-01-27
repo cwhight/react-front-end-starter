@@ -1,0 +1,52 @@
+main {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: #6eadd4;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: #454545;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.blue {
+  color: #2AB7CA;
+}
+
+.orange {
+  color: #FE4A49;
+}
+
+@media (max-width: 820px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+}
+
+@media (min-width: 820px) {
+  .full-hidden {
+    display: none !important;
+  }
+}
